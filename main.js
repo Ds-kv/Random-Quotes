@@ -1,13 +1,10 @@
-import "./style.css";
+// import "./style.css";
 
 let dat = [];
 let quoteDiv = document.querySelector("#quote");
 
 function saveData(data) {
   dat = data;
-
-  // Debug
-  // console.log(dat);
 }
 
 async function getData() {
@@ -36,4 +33,8 @@ getData().then(()=>{
   document.querySelector("#generate_btn").addEventListener("click", ()=>{
     showQuote();
   })
+}).catch(()=>{
+  alert("Failed to connect to the API. Check your internet connection");
+  dat = [{text: "An Error Occured", author: "Try again"}]
+  showQuote()
 })

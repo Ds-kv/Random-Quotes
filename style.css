@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  transition: 1s;
+}
+
+#quote_text_container {
+  display: inline-block;
+  /* white-space: nowrap; */
+}
+
+#d_quote_l {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#d_quote_r {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#quote_text {
+  display: inline-block;
+  font-style: italic;
+  font-size: large;
+  font-family: 'Roboto', sans-serif;
+}
+
+#quote_author {
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+  top: 15px;
+}
+
+.btn {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(47, 61, 255);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: 0.4s;
+}
+
+#generate_btn {
+  margin-top: 50px;
+  position: relative;
+  width: 250px;
+  height: 40px;
+  background-color: rgb(47, 61, 255);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  transition: 0.4s;
+
+
+}
+
+#generate_btn:hover{
+  background-color: #EDCE55;
+  color: black;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+#quote {
+  margin: 15px;
+  /* border: 2px solid #0000002c; */
+  border: none;
+  height: 200px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #4f05c5;
+  box-shadow: #0000004d 0px 0px 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 70vh;
+  background-color: #9055ED;
+  color: white;
+}
